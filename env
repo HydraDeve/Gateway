@@ -1,0 +1,129 @@
+#
+#                   THANKS FOR PURCHASING GateWay
+#
+#   !!! JOIN TO OUR DISCORD TO GET YOUR PERSONAL LICENSE KEY !!!
+#                  https://discord.gg/zW8h8dAPgV
+#
+#
+LICENSE = LICENSE-KEY-HERE
+
+
+
+#
+#   MongoDB connection string. If you have MongoDB on same server,
+#   use [ mongodb://localhost:27017/YOUR_DATABASE_NAME ] and replace
+#   YOUR_DATABASE_NAME to your liking. It can be anything you want!
+#
+#   If you use MongoDB atlas, you can get your connection URI from there
+#
+MONGODB_URI = MONGODB_URI
+
+
+
+#
+#   Port for GateWay to listen. Default at 80, but if you use something
+#   like Nginx, you want to use different port like 8080!
+#
+PORT = 8080
+
+
+
+#
+#   URL to your dashboard ( use your domain instead of pure IP, if you have one )
+#
+#   EXAMPLES
+#   http://YOUR_IP
+#   https://YOUR_DOMAIN.COM
+#
+BASE_URL = http://YOUR_IP
+
+
+
+#
+#   Access token & refresh tokens are "password-like" secrets that are used to encrypt
+#   JWTs. You should generate different secret for both!
+#   
+#   ENCRYPT_SECRET is used for encrypting/decrypting licenses. This should also be 
+#   different from access & refresh tokens
+#
+#   I recommend using password generator for generating the secrets:
+#   PASSWORD GENERATOR: https://passwordsgenerator.net/
+#   SETTINGS: https://i.imgur.com/Fph2Zdc.png
+#
+ACCESS_TOKEN_SECRET = ACCESS_TOKEN_SECRET
+REFRESH_TOKEN_SECRET = REFRESH_TOKEN_SECRET
+ENCRYPT_SECRET = ENCRYPT_SECRET
+
+
+
+#
+#   This is your personal account, which will be automatically created
+#   for you on first startup!
+#
+#   !!![ IMPORTANT ]!!!
+#
+#   1) Password must be 6-100 characters long. It must contain ONLY letters & numbers. You can change password from the dashboard later on!
+#   2) Use an existing email (or at least email that has valid format: something@example.com)
+#
+#   USE THESE ONLY FOR FIRST STARTUP. DO NOT MODIFY THESE AFTER FIRST STARTUP
+#   OR YOU WILL CREATE DUBLICATED ACCOUNTS. YOU CAN REMOVE PASSWORD FIELD AFTER
+#   FIRST STARTUP FOR SECURITY REASONS, BUT DO NOT REMOVE NAME OR EMAIL!
+#
+#   YOU CANNOT RETRIEVE YOUR PASSWORD IF YOU FORGOT IT. THIS MEANS YOU SHOULD
+#   SAVE IT SOMEWHERE.
+#
+LOGIN_NAME = LOGIN_NAME
+LOGIN_EMAIL = LOGIN_EMAIL
+LOGIN_PASSWORD = LOGIN_PASSWORD
+
+
+
+#
+#   These values are mainly for Discord-bot, but fill in these although you
+#   would be only using the dashboard! Otherwise it may cause some unexpected behaviour!
+#
+#   CLIENT_ID & CLIENT_SECRET can be found under "OAuth2"-tab in Discord-developers 
+#
+#   DISCORD_BOT_TOKEN can be found under "Bot"-tab in Discord-developers
+#   CLIENT_ID is same as your Discord-server ID! You can get this by right clicking your server and clicking "Copy ID"
+#
+#   !!![ IMPORTANT ]!!!
+#
+#   Firstly remember all these Discord values although you would not use the bot!
+#
+#   1) Add these intents under "OAuth2"-tab in Discord-developers: CHECK EXAMPLE => https://i.imgur.com/yC3KeSb.png
+#   2) Make sure you have these scopes when inviting your bot or reinvite your bot with these scopes if its already on your server! Otherwise it will throw DiscordAPIerror: https://i.imgur.com/JiSyVM5.png
+#   3) Add redirect to /discord/oauth under "OAuth2"-tab in Discord-developers: CHECK EXAMPLE => https://i.imgur.com/gxLkP5b.png 
+#      if you are NOT using a domain, just use your IP => http://YOUR_IP/discord/oauth
+#
+CLIENT_ID = YOUR_CLIENT_ID 
+CLIENT_SECRET = YOUR_CLIENT_SECRET
+
+DISCORD_BOT_TOKEN = YOUR_DISCORD_BOT_TOKEN
+GUILD_ID = YOUR_GUILD_ID
+
+
+#
+#   Developer API.
+#   Documentation can be found here: https://app.swaggerhub.com/apis/GateWay/developer/1.0.1#/
+#   Set this to true if you want to use the Developer API.
+#
+DEVELOPER_API = false
+
+
+
+
+
+
+#
+#   These are optional values. You DONT NEED TO CHANGE ANYTHING below this comment.
+#   If you decide to change these you should know what you are doing!
+#
+
+#   Ratelimits [ Rate limits are per hour ]
+LOGIN_RATE_LIMIT = 5
+PUBLIC_API_RATE_LIMIT = 30
+DEVELOPER_API_RATE_LIMIT = 50
+
+#   Collector timeout
+COLLECTOR_TIMEOUT = 120000
