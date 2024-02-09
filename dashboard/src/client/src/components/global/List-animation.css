@@ -1,0 +1,31 @@
+.child-enter {
+	opacity: 0;
+	transform: translate(-10px, -20px);
+	transform: translate3d(-10px, -20px, 0);
+}
+.child-enter.child-enter-active {
+	opacity: 1;
+	transition: opacity 1s ease;
+	transform: translate(0, 0);
+	transform: translate3d(0, 0, 0);
+	transition-property: transform, opacity;
+	transition-duration: 200ms;
+	transition-timing-function: cubic-bezier(0.175, 0.665, 0.32, 1), linear;
+}
+
+.child-exit {
+	max-height: 18px;
+	overflow: hidden;
+	height: auto;
+	transform: translate(0, 0);
+	opacity: 1;
+	transition: transform 0.25s, opacity 0.25s, max-height 0.25s 0.25s,
+		padding 0.25s 0.25s, margin 0.25s 0.25s;
+}
+.child-exit-active {
+	max-height: 0;
+	padding: 0;
+	margin: 0;
+	transform: translate(100px, 0);
+	opacity: 0;
+}
