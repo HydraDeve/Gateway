@@ -61,7 +61,3 @@ Discord: https://discord.gg/zW8h8dAPgV
 5.  Run "npm start" and bot should be running.
 
 6.  Link your Discord-account on dashboard in order to use the GateWay bot!
-
-
-# Downloaded from https://nullforums.net/resources/gateway-aio-licensing-system.5117/
-# 3755SI836PG67P6JXTWX88MWUJ9FWKJIRSHL03ZSZCU7J5
